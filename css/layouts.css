@@ -1,9 +1,12 @@
 
+header {
+  margin-left: 40%;
+}
 article {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  
 }
 section {
   max-width: 220px;
