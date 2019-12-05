@@ -12,9 +12,9 @@ Actual time needed to complete: 1 hour
 
 Feature 2: Templating
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: 1 hour
 
-Start time: 
+Start time: 10:50am
 
 Finish time: 
 

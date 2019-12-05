@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/layouts.css">
   <link rel="stylesheet" href="./css/modules.css">
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 </head>
 
 <body onload="updatePage('/data/page-1.json');">
@@ -17,15 +18,19 @@
     <button onclick="setUpPreviousPageData();">PREVIOUS PAGE</button>
     <div></div>
   </header>
-  <main id="vanilla-target-id">
-    <section id="horn-template">
-      <h2></h2>
-      <img src="" alt="">
-      <p></p>
-      <div></div>
-    </section>
-    <article></article>
-  </main>
+
+    <script id="handlebars-id" type="text/x-handlebars-template">
+      <section id="horn-template">
+        <h2>{{keyword}}</h2>
+        <img src="{{image_url}}" alt="{{title}}">
+        <p>{{description}}</p>
+        <div>{{horns}}</div>
+      </section>
+    </script>
+
+    <main></main>
+
+  
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
 
