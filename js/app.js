@@ -19,7 +19,6 @@ Horn.prototype.render = function () {
   $('main > article').append(template(this))
 }
 
-// eslint-disable-next-line no-undef
 renderSelection = function() {
   const $newSelector = $('<select></select>')
   const keywordArray = []
@@ -58,7 +57,7 @@ setUpNextPageData = function() {
   if (currentPageData < Object.keys(pages).length) {
     currentPageData = currentPageData + 1
     console.log("HAPPENING")
-    updatePage(pages[currentPageData]);
+    updatePage(pages[currentPageData], 'Keyword');
   }
 }
 
@@ -66,21 +65,39 @@ setUpPreviousPageData = function() {
   if (currentPageData > 1) {
     currentPageData = currentPageData - 1
     console.log("HAPPENING")
-    updatePage(pages[currentPageData]);
+    updatePage(pages[currentPageData], 'Keyword');
   }
 }
 
-updatePage = function(dataLink) {
+sortCurrentPage = function(sortMethod) {
+    updatePage(pages[currentPageData], sortMethod);
+}
+
+updatePage = function(dataLink, sortBy) {
   console.log(dataLink)
   $('article').remove();
   $('header > div').remove();
   $('main').append('<article></article>')
   $('header').append('<div></div>');
   $.get(dataLink, data => {
+    if (sortBy === 'Horns') {
+      data.sort( (a,b) => { 
+        return a.horns - b.horns; 
+      });
+    } else if (sortBy === 'Keyword') {
+      data.sort( (a, b) => { 
+        if (a.keyword < b.keyword) {
+            return -1;
+        }
+        if (a.keyword > b.keyword ) {
+            return 1;
+        }
+        return 0;
+      });
+    }
     data.forEach(horn => {
       new Horn(horn).render()
     });
-    // eslint-disable-next-line no-undef
     renderSelection()
   })
 }

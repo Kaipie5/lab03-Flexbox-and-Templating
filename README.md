@@ -32,10 +32,10 @@ Actual time needed to complete: 40 minutes
 
 Feature 4: Sorting Images
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: 1 hour
 
-Start time: 
+Start time: 12:45pm
 
-Finish time: 
+Finish time: 1:20pm
 
-Actual time needed to complete: 
+Actual time needed to complete:  35 minutes
