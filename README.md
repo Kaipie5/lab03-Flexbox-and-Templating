@@ -2,9 +2,9 @@
 
 Feature 1: Pagination
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: 30 minutes
 
-Start time: 
+Start time: 9:50am
 
 Finish time: 
 
@@ -21,6 +21,16 @@ Finish time:
 Actual time needed to complete: 
 
 Feature 3: Styling with Flexbox
+
+Estimate of time needed to complete: 
+
+Start time: 
+
+Finish time: 
+
+Actual time needed to complete: 
+
+Feature 4: Sorting Images
 
 Estimate of time needed to complete: 
 
