@@ -53,7 +53,7 @@ renderSelection = function () {
   $('header').append($newSelector)
 }
 
-$.get('/data/page-1.json', data => {
+$.get('./data/page-1.json', data => {
   data.forEach(horn => {
     new Horn(horn).render()
   });
