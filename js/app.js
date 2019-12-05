@@ -17,15 +17,6 @@ Horn.prototype.render = function () {
   let source = $("#handlebars-id").html();
   let template = Handlebars.compile(source)
   $('main > article').append(template(this))
-  // const myTemplate = $('#horn-template').html()
-  // const $newSection = $('<section></section>')
-  // $newSection.html(myTemplate)
-  // $newSection.find('h2').text(this.keyword)
-  // $newSection.find('img').attr('src', this.image_url)
-  // $newSection.find('img').attr('alt', this.title)
-  // $newSection.find('p').text(this.description)
-  // $newSection.find('div').text(this.horns)
-  // $('article').append($newSection)
 }
 
 // eslint-disable-next-line no-undef
