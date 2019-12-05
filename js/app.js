@@ -101,4 +101,3 @@ updatePage = function(dataLink, sortBy) {
     renderSelection()
   })
 }
-
