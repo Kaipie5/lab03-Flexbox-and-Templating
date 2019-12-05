@@ -48,8 +48,8 @@ renderSelection = function() {
 }
 
 let pages = {
-  1 : '/data/page-1.json',
-  2 : '/data/page-2.json'
+  1 : './data/page-1.json',
+  2 : './data/page-2.json'
 }
 let currentPageData = 1
 
@@ -101,3 +101,4 @@ updatePage = function(dataLink, sortBy) {
     renderSelection()
   })
 }
+
