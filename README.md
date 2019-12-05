@@ -6,9 +6,9 @@ Estimate of time needed to complete: 30 minutes
 
 Start time: 9:50am
 
-Finish time: 
+Finish time: 10:50am
 
-Actual time needed to complete: 
+Actual time needed to complete: 1 hour
 
 Feature 2: Templating
 

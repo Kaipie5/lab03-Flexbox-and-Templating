@@ -54,20 +54,35 @@ renderSelection = function() {
   $('header > div').append($newSelector)
 }
 
-let currentPageData = '/data/page-1.json'
+let pages = {
+  1 : '/data/page-1.json',
+  2 : '/data/page-2.json'
+}
+let currentPageData = 1
 
 setUpNextPageData = function() {
-    currentPageData = '/data/page-2.json'
+  if (currentPageData < Object.keys(pages).length) {
+    currentPageData = currentPageData + 1
     console.log("HAPPENING")
-    updatePage();
+    updatePage(pages[currentPageData]);
+  }
 }
 
-updatePage = function() {
+setUpPreviousPageData = function() {
+  if (currentPageData > 1) {
+    currentPageData = currentPageData - 1
+    console.log("HAPPENING")
+    updatePage(pages[currentPageData]);
+  }
+}
+
+updatePage = function(dataLink) {
+  console.log(dataLink)
   $('article').remove();
   $('header > div').remove();
   $('main').append('<article></article>')
   $('header').append('<div></div>');
-  $.get(currentPageData, data => {
+  $.get(dataLink, data => {
     data.forEach(horn => {
       new Horn(horn).render()
     });
