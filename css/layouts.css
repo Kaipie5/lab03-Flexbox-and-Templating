@@ -1,0 +1,26 @@
+h2 {
+    float: left;
+    
+    }
+    
+    p {
+      float: left;
+    }
+    
+    div {
+      float: left;
+    }
+    
+    section {
+    float: left;
+    height:400px; 
+    width: 400px;
+    /* margin: 40px; */
+    }
+    
+    img{
+    max-width: 400px;
+    height: 400px;
+    
+    
+    }
