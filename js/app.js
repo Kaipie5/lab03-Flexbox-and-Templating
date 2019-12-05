@@ -50,8 +50,9 @@ renderSelection = function() {
 let pages = {
   1 : './data/page-1.json',
   2 : './data/page-2.json'
-}
-let currentPageData = 1
+};
+
+let currentPageData = 1;
 
 setUpNextPageData = function() {
   if (currentPageData < Object.keys(pages).length) {
